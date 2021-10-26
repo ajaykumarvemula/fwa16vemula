@@ -14,7 +14,7 @@ var indexRouter = require("./routes/index");
 
 var usersRouter = require("./routes/users");
 
-//var computation = require("./routes/computation");
+var computation = require("./routes/computation");
 
 var mydataRouter = require("./routes/mydata");
 
@@ -48,7 +48,7 @@ app.use("/", indexRouter);
 
 app.use("/users", usersRouter);
 
-//app.use("/computation", computation);
+app.use("/computation", computation);
 
 app.use("/mydata", mydataRouter);
 
